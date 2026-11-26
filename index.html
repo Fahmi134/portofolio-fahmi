@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio — Muhammad Hafizul Fahmi</title>
+  <meta name="description" content="Portofolio pribadi interaktif berisi profil, pendidikan, keahlian, proyek, dan kontak." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Ambient Background Glow -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="brand">
+        <span class="brand-dot"></span>
+        <span id="navBrandName">hafiz.dev</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Navigasi utama">
+        <a href="#about" class="nav-link">Tentang & Sekolah</a>
+        <a href="#skills" class="nav-link">Keahlian</a>
+        <a href="#projects" class="nav-link">Proyek</a>
+        <a href="#achievements" class="nav-link">Pencapaian</a>
+        <a href="#gallery" class="nav-link">Galeri</a>
+        <a href="#contact" class="nav-link">Kontak</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="cmdBtn" title="Navigasi Cepat (Ctrl+K)" aria-label="Buka navigasi cepat">
+          <span class="kbd-hint">Ctrl K</span>
+        </button>
+        <button class="icon-btn" id="themeToggle" title="Ganti Tema" aria-label="Ganti tema gelap atau terang">
+          <span id="themeIcon">☀️</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Buka menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="status-pill">
+            <span class="pulse-dot"></span>
+            <span id="heroStatus">Terbuka untuk kolaborasi & proyek baru</span>
+          </div>
+
+          <h1 class="hero-title">
+            Halo, saya <span class="gradient-text" id="heroName">Muhammad Hafizul Fahmi</span>
+          </h1>
+
+          <p class="hero-typing-wrap">
+            Saya seorang <span class="typing-text" id="typingText"></span><span class="cursor-blink">|</span>
+          </p>
+
+          <p class="hero-desc" id="heroBio">
+            Pelajar & pengembang web yang antusias membangun aplikasi modern, cepat, dan interaktif.
+            Suka mengeksplorasi teknologi frontend, UI/UX design, dan problem solving.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">Lihat Proyek</a>
+            <button class="btn btn-secondary" id="openCvBtn">Lihat Ringkasan CV</button>
+            <a href="#contact" class="btn btn-ghost">Hubungi Saya →</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-num" data-target="12">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Proyek Selesai</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" data-target="8">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Teknologi Dikuasai</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" data-target="5">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Sertifikat & Lomba</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="profile-card" id="tiltCard">
+            <div class="profile-card-header">
+              <div class="window-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="mono-tag">profile.json</span>
+            </div>
+            <div class="profile-avatar">
+              <div class="avatar-ring">
+                <span class="avatar-initials" id="avatarInitials">HF</span>
+              </div>
+              <div class="profile-meta">
+                <h2 id="cardName">Muhammad Hafizul Fahmi</h2>
+                <p id="cardSchool">SMK Negeri 1 Jakarta • RPL</p>
+              </div>
+            </div>
+            <pre class="code-snippet"><code>{
+  <span class="code-key">"lokasi"</span>: <span class="code-str">"Jakarta, Indonesia"</span>,
+  <span class="code-key">"fokus"</span>: [<span class="code-str">"Web Dev"</span>, <span class="code-str">"UI/UX"</span>],
+  <span class="code-key">"status"</span>: <span class="code-str">"Aktif Belajar & Berkarya"</span>
+}</code></pre>
+            <div class="quick-tags">
+              <span>HTML/CSS</span>
+              <span>JavaScript</span>
+              <span>React</span>
+              <span>Figma</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About & School Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">01 / Profil & Pendidikan</span>
+          <h2 class="section-title">Tentang Saya & Sekolah</h2>
+          <p class="section-subtitle">Perjalanan belajar, latar belakang pendidikan, dan hal-hal yang saya tekuni.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="card about-card reveal">
+            <h3>Siapa Saya?</h3>
+            <p id="aboutText1">
+              Saya adalah siswa jurusan Rekayasa Perangkat Lunak (RPL) yang memiliki ketertarikan besar pada pengembangan website interaktif dan desain antarmuka yang ramah pengguna.
+            </p>
+            <p id="aboutText2">
+              Di luar jam sekolah, saya aktif mengikuti lomba pemrograman, membangun proyek open-source kecil, dan terus mengasah kemampuan problem solving.
+            </p>
+            <div class="info-list">
+              <div class="info-row">
+                <span class="info-label">Nama Lengkap</span>
+                <span class="info-value" id="infoName">Muhammad Hafizul Fahmi</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Sekolah</span>
+                <span class="info-value" id="infoSchool">SMK Negeri 1 Jakarta</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Jurusan / Kelas</span>
+                <span class="info-value" id="infoMajor">Rekayasa Perangkat Lunak (XII)</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Minat</span>
+                <span class="info-value" id="infoInterest">Frontend, UI/UX, Web Performance</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card timeline-card reveal">
+            <h3>Riwayat Pendidikan</h3>
+            <div class="timeline" id="educationTimeline">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">02 / Kemampuan</span>
+          <h2 class="section-title">Keahlian & Teknologi</h2>
+          <p class="section-subtitle">Pilih kategori untuk memfilter keahlian dan klik kartu untuk melihat detail.</p>
+        </div>
+
+        <div class="filter-bar reveal" id="skillFilters" role="tablist" aria-label="Filter keahlian">
+          <button class="filter-btn active" data-filter="all">Semua</button>
+          <button class="filter-btn" data-filter="frontend">Frontend</button>
+          <button class="filter-btn" data-filter="backend">Backend</button>
+          <button class="filter-btn" data-filter="tools">Tools & Desain</button>
+        </div>
+
+        <div class="skills-grid" id="skillsGrid">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">03 / Karya Pilihan</span>
+          <h2 class="section-title">Proyek Terbaru</h2>
+          <p class="section-subtitle">Klik salah satu proyek untuk melihat deskripsi lengkap, fitur, dan teknologi yang digunakan.</p>
+        </div>
+
+        <div class="projects-controls reveal">
+          <div class="filter-bar" id="projectFilters" role="tablist" aria-label="Filter proyek">
+            <button class="filter-btn active" data-filter="all">Semua</button>
+            <button class="filter-btn" data-filter="web">Web App</button>
+            <button class="filter-btn" data-filter="ui">UI/UX</button>
+            <button class="filter-btn" data-filter="tool">Tools</button>
+          </div>
+          <div class="search-box">
+            <input type="search" id="projectSearch" placeholder="Cari proyek atau teknologi..." aria-label="Cari proyek" />
+          </div>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements & Experience Section -->
+    <section id="achievements" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">04 / Pengalaman & Prestasi</span>
+          <h2 class="section-title">Sertifikat, Organisasi & Lomba</h2>
+          <p class="section-subtitle">Aktivitas non-akademik dan pencapaian yang mendukung perkembangan skill saya.</p>
+        </div>
+
+        <div class="achievements-grid" id="achievementsGrid">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery & Highlights Slider Section -->
+    <section id="gallery" class="section">
+      <div class="container">
+        <div class="section-header gallery-header reveal">
+          <div>
+            <span class="section-eyebrow">05 / Galeri & Sorotan</span>
+            <h2 class="section-title">Slide Proyek, Sertifikat & Momen Penting</h2>
+            <p class="section-subtitle">Geser slide untuk melihat dokumentasi karya, sertifikat, atau tambahkan gambarmu sendiri langsung di sini.</p>
+          </div>
+          <button class="btn btn-primary" id="openAddSlideBtn">+ Tambah Slide</button>
+        </div>
+
+        <div class="gallery-controls reveal">
+          <div class="filter-bar" id="galleryFilters" role="tablist" aria-label="Filter galeri">
+            <button class="filter-btn active" data-filter="all">Semua</button>
+            <button class="filter-btn" data-filter="proyek">Gambar Proyek</button>
+            <button class="filter-btn" data-filter="sertifikat">Sertifikat</button>
+            <button class="filter-btn" data-filter="penting">Hal Penting</button>
+          </div>
+          <button class="icon-btn" id="autoplayToggle" aria-pressed="true" title="Putar/Jeda slide otomatis">
+            ⏸ Autoplay
+          </button>
+        </div>
+
+        <div class="slider-wrapper card reveal" id="sliderWrapper">
+          <div class="slider-viewport" id="sliderViewport">
+            <div class="slider-track" id="sliderTrack">
+              <!-- Populated by JS -->
+            </div>
+            <button class="slider-arrow prev" id="prevSlideBtn" aria-label="Slide sebelumnya">‹</button>
+            <button class="slider-arrow next" id="nextSlideBtn" aria-label="Slide berikutnya">›</button>
+          </div>
+
+          <div class="slider-footer">
+            <div class="slider-dots" id="sliderDots" role="tablist" aria-label="Pilih slide"></div>
+            <div class="slider-counter" id="sliderCounter">1 / 1</div>
+          </div>
+
+          <div class="slider-thumbs" id="sliderThumbs"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">06 / Mari Terhubung</span>
+          <h2 class="section-title">Hubungi Saya</h2>
+          <p class="section-subtitle">Punya ide proyek, pertanyaan, atau sekadar ingin menyapa? Kirim pesan langsung di sini.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="card contact-info reveal">
+            <h3>Informasi Kontak</h3>
+            <p>Saya selalu terbuka untuk diskusi mengenai proyek web, lomba, atau kolaborasi belajar.</p>
+
+            <div class="contact-items">
+              <div class="contact-item">
+                <div>
+                  <span class="contact-label">Email</span>
+                  <span class="contact-value" id="contactEmail">hafizul.fahmi@example.com</span>
+                </div>
+                <button class="btn-mini copy-btn" data-copy="hafizul.fahmi@example.com">Salin</button>
+              </div>
+              <div class="contact-item">
+                <div>
+                  <span class="contact-label">GitHub</span>
+                  <span class="contact-value">github.com/hafizulfahmi</span>
+                </div>
+                <a href="https://github.com" target="_blank" rel="noopener" class="btn-mini">Buka</a>
+              </div>
+              <div class="contact-item">
+                <div>
+                  <span class="contact-label">LinkedIn</span>
+                  <span class="contact-value">linkedin.com/in/hafizulfahmi</span>
+                </div>
+                <a href="https://linkedin.com" target="_blank" rel="noopener" class="btn-mini">Buka</a>
+              </div>
+            </div>
+          </div>
+
+          <form class="card contact-form reveal" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="senderName">Nama</label>
+              <input type="text" id="senderName" name="name" placeholder="Masukkan nama kamu" required />
+              <span class="error-msg" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="senderEmail">Email</label>
+              <input type="email" id="senderEmail" name="email" placeholder="nama@email.com" required />
+              <span class="error-msg" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="senderMessage">Pesan</label>
+              <textarea id="senderMessage" name="message" rows="4" placeholder="Tulis pesan kamu di sini..." required></textarea>
+              <span class="error-msg" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Kirim Pesan</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="yearNow">2026</span> <span id="footerName">Muhammad Hafizul Fahmi</span>. Dibuat dengan HTML, CSS & JavaScript interaktif.</p>
+      <a href="#hero" class="back-top">Kembali ke atas ↑</a>
+    </div>
+  </footer>
+
+  <!-- Project Detail Modal -->
+  <div class="modal-backdrop" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <button class="modal-close" id="closeProjectModal" aria-label="Tutup modal">✕</button>
+      <div id="projectModalBody"></div>
+    </div>
+  </div>
+
+  <!-- CV Preview Modal -->
+  <div class="modal-backdrop" id="cvModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <button class="modal-close" id="closeCvModal" aria-label="Tutup modal CV">✕</button>
+      <h2>Ringkasan CV</h2>
+      <p class="modal-subtitle">Muhammad Hafizul Fahmi — Pelajar RPL & Web Developer</p>
+      <div class="cv-preview">
+        <h4>Pendidikan</h4>
+        <p>SMK Negeri 1 Jakarta — Rekayasa Perangkat Lunak (2023 – 2026)</p>
+        <h4>Keahlian Utama</h4>
+        <p>HTML5, CSS3, JavaScript (ES6+), React, Node.js, Tailwind CSS, Figma, Git</p>
+        <h4>Pengalaman & Prestasi</h4>
+        <ul>
+          <li>Juara 2 LKS Web Technology Tingkat Kota (2025)</li>
+          <li>Ketua Divisi IT — OSIS / Klub Coding Sekolah</li>
+          <li>Magang Junior Frontend Developer (3 Bulan)</li>
+        </ul>
+      </div>
+      <div class="modal-actions">
+        <button class="btn btn-primary" id="printCvBtn">Cetak / Simpan PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Command Palette (Ctrl+K) -->
+  <div class="modal-backdrop" id="cmdModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-box cmd-box">
+      <input type="text" id="cmdInput" placeholder="Ketik tujuan (contoh: proyek, sekolah, tema, cv)..." aria-label="Perintah cepat" />
+      <ul class="cmd-list" id="cmdList"></ul>
+    </div>
+  </div>
+
+  <!-- Add Slide Modal -->
+  <div class="modal-backdrop" id="addSlideModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <button class="modal-close" id="closeAddSlideModal" aria-label="Tutup modal tambah slide">✕</button>
+      <h2>Tambah Gambar ke Slide</h2>
+      <p class="modal-subtitle">Unggah gambar proyek, sertifikat, atau momen penting langsung dari perangkatmu.</p>
+      <form id="addSlideForm">
+        <div class="form-group">
+          <label for="slideCategory">Kategori</label>
+          <select id="slideCategory" required>
+            <option value="proyek">Gambar Proyek</option>
+            <option value="sertifikat">Sertifikat</option>
+            <option value="penting">Hal Penting</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="slideTitle">Judul Slide</label>
+          <input type="text" id="slideTitle" placeholder="Contoh: Sertifikat Juara 2 LKS Web Tech" required />
+        </div>
+        <div class="form-group">
+          <label for="slideDesc">Keterangan Singkat</label>
+          <textarea id="slideDesc" rows="2" placeholder="Ceritakan sedikit tentang gambar ini..." required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="slideFile">Pilih File Gambar (JPG/PNG/WebP)</label>
+          <input type="file" id="slideFile" accept="image/*" />
+        </div>
+        <div class="form-group">
+          <label for="slideUrl">Atau masukkan URL Gambar (opsional)</label>
+          <input type="url" id="slideUrl" placeholder="https://example.com/gambar.jpg" />
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Tambahkan ke Slide</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Floating Music Player -->
+  <div class="music-player" id="musicPlayer" aria-label="Pemutar musik latar">
+    <button class="music-play-btn" id="musicToggleBtn" aria-label="Putar atau jeda musik" title="Putar / Jeda Musik">
+      <span id="musicPlayIcon">▶</span>
+    </button>
+    <div class="music-info">
+      <div class="music-title-row">
+        <span class="music-title" id="musicTitle">Lofi Ambient Beat</span>
+        <div class="eq-bars" id="eqBars" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+      <span class="music-artist" id="musicArtist">Ganti lagu di script.js</span>
+    </div>
+    <button class="music-mute-btn" id="musicMuteBtn" aria-label="Bisukan musik" title="Bisukan / Suarakan">🔊</button>
+    <input type="range" class="music-volume" id="musicVolume" min="0" max="1" step="0.05" value="0.4" aria-label="Volume musik" />
+    <audio id="bgAudio" loop preload="none"></audio>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
