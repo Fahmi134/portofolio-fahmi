@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAHMI | Muhammad Hafizul Fahmi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;600;700;800;900&family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-logo">FAHMI<span class="red-dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#experience">Pengalaman</a></li>
+      <li><a href="#projects">Karya</a></li>
+      <li><a href="#project-iseng">Project Iseng</a></li>
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#skills">Keahlian</a></li>
+      <li><a href="#journey">Perjalanan</a></li>
+      <li><a href="#contact">Kontak</a></li>
+    </ul>
+    <div class="nav-right">
+      <button id="music-toggle" class="music-btn" title="Putar / Jeda Musik" aria-label="Toggle background music">
+        <span class="eq-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="music-text">Musik</span>
+      </button>
+      <div class="nav-status">
+        <span class="status-dot"></span>Available
+      </div>
+      <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Buka menu navigasi" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Background Music -->
+  <audio id="bg-music" src="bgm.mp3?v=2" loop autoplay preload="auto"></audio>
+
+  <!-- Mobile Nav Drawer -->
+  <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+    <a href="#experience">01 · Pengalaman</a>
+    <a href="#projects">02 · Karya</a>
+    <a href="#project-iseng">03 · Project Iseng</a>
+    <a href="#about">04 · Tentang</a>
+    <a href="#skills">05 · Keahlian</a>
+    <a href="#journey">06 · Perjalanan</a>
+    <a href="#contact">07 · Kontak</a>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section id="home" class="hero">
+    <div class="hero-grid">
+
+      <!-- Left -->
+      <div class="hero-left" data-animate>
+        <p class="hero-eyebrow">Muhammad Hafizul Fahmi — Fahmi</p>
+        <p class="hero-tagline">
+          Berorientasi pada hasil.<br/>
+          Siap berkarya di dunia nyata.
+        </p>
+        <a href="#experience" class="btn-primary">Lihat Pengalaman →</a>
+        <div class="hero-meta">
+          <span class="meta-label">📍 AMUNTAI · TANAH LAUT, KALIMANTAN SELATAN</span>
+        </div>
+        <div class="showreel-row">
+          <div class="play-icon">▶</div>
+          <span>D4 Rekayasa Komputer &amp; Jaringan · Politala</span>
+        </div>
+      </div>
+
+      <!-- Center: Portrait -->
+      <div class="hero-center" data-animate>
+        <div class="portrait-wrapper">
+          <img src="foto-hafizul.jpg" alt="Muhammad Hafizul Fahmi" class="portrait-img" />
+          <div class="portrait-vignette"></div>
+          <div class="portrait-glow"></div>
+        </div>
+      </div>
+
+      <!-- Right: Stats -->
+      <div class="hero-right" data-animate>
+        <div class="stat-block">
+          <span class="stat-num">4<span class="red-dot">+</span></span>
+          <span class="stat-label">Pengalaman Kerja</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-block">
+          <span class="stat-num">2<span class="red-dot">+</span></span>
+          <span class="stat-label">Bahasa Aktif (ID &amp; EN)</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-block">
+          <span class="stat-num">5<span class="red-dot">+</span></span>
+          <span class="stat-label">Keahlian Teknis &amp; Desain</span>
+        </div>
+        <div class="hero-label">PORTFOLIO · MUHAMMAD HAFIZUL FAHMI</div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 01 — PENGALAMAN KERJA
+  ═══════════════════════════════════════════ -->
+  <section id="experience" class="section-experience">
+    <div class="section-header" data-animate>
+      <div>
+        <div class="section-eyebrow">
+          <span class="section-num">01</span>
+          <span>/ PENGALAMAN KERJA</span>
+        </div>
+        <h2 class="section-title">JEJAK<br/><span class="red-text">PENGALAMAN.</span></h2>
+      </div>
+      <a href="#contact" class="link-arrow">Hubungi Fahmi →</a>
+    </div>
+
+    <div class="experience-grid" data-animate>
+      <article class="exp-card">
+        <div class="exp-top">
+          <span class="exp-num">01</span>
+          <span class="exp-role">IT Support Intern</span>
+        </div>
+        <h3 class="exp-company">Dinas Komunikasi dan Informasi Amuntai</h3>
+        <ul class="exp-list">
+          <li>Menganalisis data dan memantau kinerja di lapangan</li>
+          <li>Merancang pembuatan rencana anggaran belanja</li>
+          <li>Memimpin pelaksanaan pembangunan</li>
+        </ul>
+      </article>
+
+      <article class="exp-card">
+        <div class="exp-top">
+          <span class="exp-num">02</span>
+          <span class="exp-role">Computer Technician Intern</span>
+        </div>
+        <h3 class="exp-company">LZ Computer Amuntai</h3>
+        <ul class="exp-list">
+          <li>Membangun dan merancang gambar gudang penyimpanan</li>
+          <li>Merancang pembuatan rencana anggaran belanja</li>
+        </ul>
+      </article>
+
+      <article class="exp-card">
+        <div class="exp-top">
+          <span class="exp-num">03</span>
+          <span class="exp-role">Visual &amp; Media Production</span>
+        </div>
+        <h3 class="exp-company">Freelance Fotografer &amp; Videographer</h3>
+        <ul class="exp-list">
+          <li>Mendokumentasikan berbagai acara dan momen penting melalui foto dan video</li>
+          <li>Mengolah materi visual dengan software desain dan penyuntingan</li>
+        </ul>
+      </article>
+
+      <article class="exp-card">
+        <div class="exp-top">
+          <span class="exp-num">04</span>
+          <span class="exp-role">Staf Operasional</span>
+        </div>
+        <h3 class="exp-company">Toko Madya Amuntai</h3>
+        <ul class="exp-list">
+          <li>Mendukung kelancaran operasional harian toko dan pelayanan pelanggan</li>
+          <li>Berkoordinasi dalam tim dengan ketelitian dan tanggung jawab penuh</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 02 — KARYA & FOKUS BIDANG
+  ═══════════════════════════════════════════ -->
+  <section id="projects" class="section-projects">
+    <div class="section-header" data-animate>
+      <div>
+        <div class="section-eyebrow">
+          <span class="section-num">02</span>
+          <span>/ FOKUS &amp; KARYA</span>
+        </div>
+        <h2 class="section-title">KARYA YANG<br/><span class="red-text">BICARA.</span></h2>
+      </div>
+      <a href="#contact" class="link-arrow">Diskusi proyek →</a>
+    </div>
+
+    <!-- Filter Bar -->
+    <div class="filter-bar" data-animate>
+      <button class="filter-btn active" data-filter="all">Semua</button>
+      <button class="filter-btn" data-filter="it">IT &amp; Jaringan</button>
+      <button class="filter-btn" data-filter="desain">Desain &amp; RAB</button>
+      <button class="filter-btn" data-filter="media">Foto &amp; Video</button>
+      <button class="filter-btn" data-filter="ops">Operasional</button>
+    </div>
+
+    <!-- Project Cards Grid -->
+    <div class="projects-grid" data-animate>
+      <div class="project-card" data-category="it">
+        <div class="card-num">01</div>
+        <div class="card-img web-bg">
+          <div class="card-overlay">
+            <span class="card-icon">📊</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <h3>ANALISIS DATA &amp; MONITORING</h3>
+          <p>IT Support · Diskominfo Amuntai</p>
+        </div>
+      </div>
+      <div class="project-card" data-category="desain">
+        <div class="card-num">02</div>
+        <div class="card-img mobile-bg">
+          <div class="card-overlay">
+            <span class="card-icon">📐</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <h3>GAMBAR GUDANG PENYIMPANAN</h3>
+          <p>Desain &amp; Perancangan · LZ Computer</p>
+        </div>
+      </div>
+      <div class="project-card" data-category="desain">
+        <div class="card-num">03</div>
+        <div class="card-img db-bg">
+          <div class="card-overlay">
+            <span class="card-icon">🧾</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <h3>RENCANA ANGGARAN BELANJA</h3>
+          <p>Perencanaan RAB · Diskominfo &amp; LZ</p>
+        </div>
+      </div>
+      <div class="project-card" data-category="media">
+        <div class="card-num">04</div>
+        <div class="card-img ui-bg">
+          <div class="card-overlay">
+            <span class="card-icon">📸</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <h3>FOTOGRAFI &amp; VIDEOGRAFI</h3>
+          <p>Freelance Visual Production</p>
+        </div>
+      </div>
+      <div class="project-card" data-category="it">
+        <div class="card-num">05</div>
+        <div class="card-img iot-bg">
+          <div class="card-overlay">
+            <span class="card-icon">🖥️</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <h3>TEKNISI &amp; JARINGAN KOMPUTER</h3>
+          <p>Hardware &amp; D4 RKJ Politala</p>
+        </div>
+      </div>
+      <div class="project-card" data-category="ops">
+        <div class="card-num">06</div>
+        <div class="card-img web2-bg">
+          <div class="card-overlay">
+            <span class="card-icon">⚙️</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <h3>KOORDINASI &amp; OPERASIONAL</h3>
+          <p>Pelaksanaan Lapangan &amp; Toko Madya</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured Project -->
+    <div class="featured-project" data-animate>
+      <div class="featured-left">
+        <span class="feat-label">PROFIL AKADEMIK &amp; PRAKTIK</span>
+        <h3 class="feat-title">REKAYASA<br/><span class="red-text">KOMPUTER</span><br/>&amp; JARINGAN</h3>
+        <p class="feat-desc">
+          Menggabungkan latar belakang D4 Rekayasa Komputer dan Jaringan di Politeknik Negeri Tanah Laut
+          dengan pengalaman lapangan di bidang IT Support, teknisi komputer, desain, serta produksi visual.
+        </p>
+        <a href="#contact" class="btn-outline">Pelajari Lebih →</a>
+      </div>
+      <div class="featured-visual">
+        <div class="code-preview">
+          <div class="code-dots"><span></span><span></span><span></span></div>
+          <pre><code><span class="kw">const</span> <span class="fn">fahmiProfile</span> = () => {
+  <span class="kw">return</span> {
+    nickname: <span class="str">"Fahmi"</span>,
+    fullName: <span class="str">"Muhammad Hafizul Fahmi"</span>,
+    campus: <span class="str">"Politeknik Negeri Tanah Laut"</span>,
+    major: <span class="str">"D4 Rekayasa Komputer &amp; Jaringan"</span>,
+    languages: [<span class="str">"Indonesia"</span>, <span class="str">"English"</span>],
+    status: <span class="str">"<span class="red-text">Available</span>"</span>
+  };
+};</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       TECH STACK STRIP
+  ═══════════════════════════════════════════ -->
+  <div class="tech-strip" data-animate>
+    <div class="strip-label">KOMPETENSI &amp; PENGALAMAN TERPADU.</div>
+    <div class="tech-scroll">
+      <div class="tech-items">
+        <span>IT Support</span><span>Computer Technician</span><span>Networking</span><span>Data Analysis</span>
+        <span>RAB Planning</span><span>Design Software</span><span>Fotografi</span><span>Videografi</span>
+        <span>Operasional</span><span>Bahasa Indonesia</span><span>English</span><span>D4 RKJ Politala</span>
+        <span>IT Support</span><span>Computer Technician</span><span>Networking</span><span>Data Analysis</span>
+        <span>RAB Planning</span><span>Design Software</span><span>Fotografi</span><span>Videografi</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 03 — PROJECT ISENG
+  ═══════════════════════════════════════════ -->
+  <section id="project-iseng" class="section-iseng">
+    <div class="section-header" data-animate>
+      <div>
+        <div class="section-eyebrow">
+          <span class="section-num">03</span>
+          <span>/ PROJECT ISENG</span>
+        </div>
+        <h2 class="section-title">PROJECT<br/><span class="red-text">ISENG.</span></h2>
+      </div>
+      <span class="link-arrow iseng-sub-note">Eksperimen seru &amp; mini game ✦</span>
+    </div>
+
+    <div class="iseng-grid" data-animate>
+      <!-- Project 1: Game Simple (Interactive & Clickable) -->
+      <a href="https://fahmi134.github.io/gameSimple/" target="_blank" rel="noopener noreferrer" class="iseng-card iseng-live" aria-label="Buka Project 1: Game Simple">
+        <div class="iseng-spotlight" aria-hidden="true"></div>
+        <div class="iseng-card-head">
+          <span class="iseng-num">01</span>
+          <span class="iseng-badge live"><i class="live-pulse"></i> LIVE · INTERAKTIF</span>
+        </div>
+
+        <div class="iseng-stage" aria-hidden="true">
+          <div class="stage-grid"></div>
+          <div class="stage-scanline"></div>
+          <div class="arcade-hud">
+            <span>LVL 01</span>
+            <span>READY</span>
+          </div>
+          <div class="arcade-arena">
+            <span class="orbit-ring r1"></span>
+            <span class="orbit-ring r2"></span>
+            <div class="arcade-core">
+              <span class="arcade-pad">🎮</span>
+            </div>
+            <span class="pixel-spark s1"></span>
+            <span class="pixel-spark s2"></span>
+            <span class="pixel-spark s3"></span>
+            <span class="pixel-spark s4"></span>
+          </div>
+          <div class="arcade-bars">
+            <i></i><i></i><i></i><i></i><i></i>
+          </div>
+        </div>
+
+        <div class="iseng-body">
+          <span class="iseng-kicker">PROJECT 1 · WEB MINI GAME</span>
+          <h3 class="iseng-title">GAME SIMPLE</h3>
+          <p class="iseng-desc">
+            Mini game web interaktif buatan iseng — klik kartu ini untuk langsung meluncur dan memainkannya di browser.
+          </p>
+          <div class="iseng-footer">
+            <div class="iseng-tags">
+              <span>Interactive</span>
+              <span>Playable</span>
+            </div>
+            <span class="iseng-cta">Mainkan Sekarang <i class="cta-arrow">↗</i></span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 2: Coming Soon -->
+      <div class="iseng-card iseng-soon" aria-disabled="true">
+        <div class="iseng-spotlight" aria-hidden="true"></div>
+        <div class="iseng-card-head">
+          <span class="iseng-num">02</span>
+          <span class="iseng-badge soon"><i class="soon-dot"></i> COMING SOON</span>
+        </div>
+
+        <div class="iseng-stage soon-stage" aria-hidden="true">
+          <div class="stage-grid"></div>
+          <div class="radar-wrap">
+            <span class="radar-sweep"></span>
+            <span class="radar-ring"></span>
+            <span class="soon-icon">✦</span>
+          </div>
+          <div class="soon-loader">
+            <span class="soon-loader-bar"></span>
+          </div>
+        </div>
+
+        <div class="iseng-body">
+          <span class="iseng-kicker">PROJECT 2 · NEXT EXPERIMENT</span>
+          <h3 class="iseng-title">COMING SOON</h3>
+          <p class="iseng-desc">
+            Eksperimen seru berikutnya sedang diracik di balik layar. Tunggu kehadirannya segera!
+          </p>
+          <div class="iseng-footer">
+            <div class="iseng-tags">
+              <span>In Progress</span>
+              <span>Stay Tuned</span>
+            </div>
+            <span class="iseng-cta muted">Segera Hadir ⏳</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       ABOUT / SECTION 04
+  ═══════════════════════════════════════════ -->
+  <section id="about" class="section-about">
+    <div class="section-eyebrow" data-animate>
+      <span class="section-num">04</span>
+      <span>/ TENTANG SAYA</span>
+    </div>
+    <div class="about-split" data-animate>
+      <div class="about-headline">
+        <h2>BERORIENTASI<br/>PADA <span class="red-text">HASIL.</span></h2>
+      </div>
+      <div class="about-bio">
+        <p>
+          Saya <strong>Muhammad Hafizul Fahmi</strong> (akrab disapa <strong>Fahmi</strong>),
+          Mahasiswa <strong>D4 Rekayasa Komputer dan Jaringan</strong> dari
+          <strong>Politeknik Negeri Tanah Laut (POLITALA)</strong>.
+        </p>
+        <p>
+          Saya berpengalaman di berbagai acara dan bidang yang saya minati — mulai dari
+          magang IT Support di instansi pemerintahan, teknisi komputer, staf operasional,
+          hingga freelance fotografer dan videographer. Berorientasi pada hasil dan mampu
+          bekerja di bawah tekanan.
+        </p>
+        <div class="bio-facts">
+          <div class="bio-fact">
+            <small>TTL</small>
+            <span>Amuntai, 07 Mei 2008</span>
+          </div>
+          <div class="bio-fact">
+            <small>Jenis Kelamin</small>
+            <span>Laki-Laki</span>
+          </div>
+          <div class="bio-fact">
+            <small>Kewarganegaraan</small>
+            <span>Indonesia</span>
+          </div>
+          <div class="bio-fact">
+            <small>Domisili</small>
+            <span>Palampitan Hilir, Amuntai</span>
+          </div>
+        </div>
+        <div class="about-tags">
+          <span class="tag">Berorientasi Hasil</span>
+          <span class="tag">Tahan Tekanan</span>
+          <span class="tag">Indonesia &amp; English</span>
+          <span class="tag">Software Desain</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SKILLS + PROCESS + MANIFESTO (3-COL)
+  ═══════════════════════════════════════════ -->
+  <section id="skills" class="section-triple">
+    <div class="triple-grid">
+
+      <!-- Left: Education & Skills -->
+      <div class="triple-col" data-animate>
+        <span class="col-label">PENDIDIKAN &amp; KEMAMPUAN</span>
+
+        <div class="edu-block">
+          <h4 class="block-title">PENDIDIKAN</h4>
+          <div class="edu-item">
+            <span class="edu-year red-text">2026–Skrg</span>
+            <div>
+              <strong>Politeknik Negeri Tanah Laut</strong>
+              <p>D4 Rekayasa Komputer dan Jaringan</p>
+            </div>
+          </div>
+          <div class="edu-item">
+            <span class="edu-year">2023–2026</span>
+            <div>
+              <strong>SMK Negeri 1 Amuntai</strong>
+              <p>Pendidikan Menengah Kejuruan</p>
+            </div>
+          </div>
+          <div class="edu-item">
+            <span class="edu-year">2020–2023</span>
+            <div>
+              <strong>MTsN 2 Hulu Sungai Utara</strong>
+              <p>Madrasah Tsanawiyah</p>
+            </div>
+          </div>
+          <div class="edu-item">
+            <span class="edu-year">2014–2020</span>
+            <div>
+              <strong>MI Ummul Qura</strong>
+              <p>Madrasah Ibtidaiyah</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-block">
+          <h4 class="block-title">KEMAMPUAN</h4>
+          <div class="skill-pills">
+            <span class="pill">Bahasa Indonesia (Aktif)</span>
+            <span class="pill">Bahasa Inggris (Aktif)</span>
+            <span class="pill">Software Desain</span>
+            <span class="pill">IT Support</span>
+            <span class="pill">Teknisi Komputer</span>
+            <span class="pill">Rencana Anggaran Belanja</span>
+            <span class="pill">Fotografi &amp; Videografi</span>
+            <span class="pill">Operasional</span>
+          </div>
+          <div class="tech-badges">
+            <span class="badge badge-blue" title="Bahasa Indonesia">ID</span>
+            <span class="badge badge-cyan" title="English">EN</span>
+            <span class="badge badge-green" title="IT Support">IT</span>
+            <span class="badge badge-yellow" title="Desain">DS</span>
+            <span class="badge badge-orange" title="Fotografi">FG</span>
+            <span class="badge badge-purple" title="Videografi">VD</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Middle: Process -->
+      <div class="triple-col" data-animate>
+        <span class="col-label">ALUR KERJA &amp; EKSEKUSI</span>
+        <div class="process-timeline">
+          <div class="process-item">
+            <span class="process-num">01</span>
+            <div class="process-content">
+              <h4>ANALISIS DATA</h4>
+              <p>Mengumpulkan data lapangan, memantau kinerja, dan mengidentifikasi kebutuhan utama.</p>
+            </div>
+          </div>
+          <div class="process-item">
+            <span class="process-num">02</span>
+            <div class="process-content">
+              <h4>PERENCANAAN &amp; RAB</h4>
+              <p>Menyusun rencana anggaran belanja dan rancangan teknis secara terstruktur.</p>
+            </div>
+          </div>
+          <div class="process-item">
+            <span class="process-num">03</span>
+            <div class="process-content">
+              <h4>DESAIN &amp; KONSEP</h4>
+              <p>Membuat rancangan visual, gambar denah, atau konsep produksi dengan software desain.</p>
+            </div>
+          </div>
+          <div class="process-item">
+            <span class="process-num">04</span>
+            <div class="process-content">
+              <h4>PELAKSANAAN</h4>
+              <p>Memimpin dan mengeksekusi pekerjaan lapangan, instalasi teknis, atau dokumentasi acara.</p>
+            </div>
+          </div>
+          <div class="process-item">
+            <span class="process-num">05</span>
+            <div class="process-content">
+              <h4>HASIL &amp; EVALUASI</h4>
+              <p>Memastikan kualitas akhir tercapai tepat waktu, rapi, dan siap digunakan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Manifesto Card -->
+      <div class="triple-col" data-animate>
+        <div class="manifesto-card">
+          <div class="manifesto-quote">
+            <p>"Berorientasi pada hasil, adaptif di berbagai bidang, dan siap bekerja maksimal di bawah tekanan."</p>
+          </div>
+          <div class="manifesto-sig">
+            <span class="sig-text">Fahmi</span>
+          </div>
+          <div class="manifesto-star">✦</div>
+          <div class="manifesto-meta">
+            <span>Muhammad Hafizul Fahmi</span>
+            <span>D4 RKJ · Politala · 2026</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       JOURNEY / SECTION 05
+  ═══════════════════════════════════════════ -->
+  <section id="journey" class="section-journey">
+    <div class="section-eyebrow" data-animate>
+      <span class="section-num">05</span>
+      <span>/ PERJALANAN</span>
+    </div>
+    <div class="journey-content" data-animate>
+      <h2 class="section-title">PERJALANAN<br/><span class="red-text">FAHMI.</span></h2>
+
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-year red-text">2014–2020</div>
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <h4>MI Ummul Qura</h4>
+            <p>Menempuh pendidikan dasar di Amuntai sekaligus menumbuhkan kedisiplinan dan ketertarikan pada hal-hal teknis dan kreatif.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year red-text">2020–2023</div>
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <h4>MTsN 2 Hulu Sungai Utara</h4>
+            <p>Mengembangkan kemampuan komunikasi aktif dalam bahasa Indonesia dan Inggris serta ketertarikan pada desain dan teknologi.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year red-text">2023–2026</div>
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <h4>SMK Negeri 1 Amuntai &amp; Pengalaman Industri</h4>
+            <p>Memperoleh pengalaman langsung sebagai IT Support Intern di Dinas Komunikasi dan Informasi Amuntai, Computer Technician Intern di LZ Computer Amuntai, Staf Operasional di Toko Madya Amuntai, serta aktif sebagai Freelance Fotografer &amp; Videographer.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year red-text">2026–Skrg</div>
+          <div class="tl-dot active"></div>
+          <div class="tl-body">
+            <h4>Politeknik Negeri Tanah Laut (POLITALA)</h4>
+            <p>Melanjutkan pendidikan di program D4 Rekayasa Komputer dan Jaringan. Siap berkolaborasi, berkarya, dan memberikan kontribusi nyata.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT / SECTION 06
+  ═══════════════════════════════════════════ -->
+  <section id="contact" class="section-contact">
+    <div class="section-eyebrow" data-animate>
+      <span class="section-num">06</span>
+      <span>/ KONTAK</span>
+    </div>
+    <div class="contact-content" data-animate>
+      <h2 class="contact-headline">
+        MARI KITA<br/>
+        <span class="red-text">BERKOLABORASI.</span>
+      </h2>
+      <p class="contact-sub">
+        Butuh dukungan IT, teknisi komputer, desain, atau dokumentasi foto &amp; video?<br/>
+        Hubungi Fahmi — selalu terbuka untuk kolaborasi dan kesempatan baru.
+      </p>
+      <div class="contact-links">
+        <a href="https://wa.me/6285137010354" target="_blank" rel="noopener" class="contact-item">
+          <span class="ci-icon">☎</span>
+          <div>
+            <small>TELEPON / WHATSAPP</small>
+            <span>+62 851-3701-0354</span>
+          </div>
+        </a>
+        <a href="mailto:hafizulfahmi987@gmail.com" class="contact-item">
+          <span class="ci-icon">✉</span>
+          <div>
+            <small>EMAIL</small>
+            <span>Hafizulfahmi987@gmail.com</span>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/hfzl_fhmi/" target="_blank" rel="noopener" class="contact-item">
+          <span class="ci-icon">◈</span>
+          <div>
+            <small>SOSIAL MEDIA / INSTAGRAM</small>
+            <span>@Hfzl_fhmi</span>
+          </div>
+        </a>
+        <div class="contact-item contact-static">
+          <span class="ci-icon">📍</span>
+          <div>
+            <small>ALAMAT</small>
+            <span>Palampitan Hilir, Amuntai, Kalimantan Selatan</span>
+          </div>
+        </div>
+      </div>
+      <a href="mailto:hafizulfahmi987@gmail.com" class="btn-primary btn-large">Hubungi Fahmi →</a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer>
+    <div class="footer-left">
+      <span class="nav-logo">FAHMI<span class="red-dot">.</span></span>
+      <p>Muhammad Hafizul Fahmi © 2026</p>
+    </div>
+    <div class="footer-center">
+      <p>Politeknik Negeri Tanah Laut</p>
+      <p>D4 Rekayasa Komputer &amp; Jaringan</p>
+    </div>
+    <div class="footer-right">
+      <p>Amuntai · Tanah Laut</p>
+      <p>Kalimantan Selatan, Indonesia</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
